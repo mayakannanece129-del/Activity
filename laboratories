@@ -1,0 +1,8 @@
+CREATE TABLE laboratories (
+    id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    lab_name TEXT NOT NULL,
+    department TEXT NOT NULL,
+    capacity INTEGER NOT NULL,
+    location TEXT,
+    status TEXT DEFAULT 'Available'
+);
