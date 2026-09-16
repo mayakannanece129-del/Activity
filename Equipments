@@ -1,0 +1,10 @@
+CREATE TABLE equipment (
+    id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    equipment_name TEXT NOT NULL,
+    category TEXT,
+    quantity INTEGER NOT NULL,
+    available_quantity INTEGER NOT NULL,
+    purchase_date DATE,
+    condition TEXT,
+    status TEXT DEFAULT 'Working'
+);
