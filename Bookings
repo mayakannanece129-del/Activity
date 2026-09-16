@@ -1,0 +1,8 @@
+CREATE TABLE bookings (
+    id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    student_id BIGINT REFERENCES students(id),
+    lab_id BIGINT REFERENCES laboratories(id),
+    booking_date DATE,
+    time_slot TEXT,
+    status TEXT DEFAULT 'Pending'
+);
