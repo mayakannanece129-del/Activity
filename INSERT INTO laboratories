@@ -1,0 +1,5 @@
+INSERT INTO laboratories
+(lab_name, department, capacity, location)
+VALUES
+('Communication Lab','ECE',40,'Block A'),
+('Microprocessor Lab','ECE',35,'Block B');
